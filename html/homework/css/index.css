@@ -51,6 +51,13 @@ a:hover {
     height: 800px;
     overflow: hidden;
 }
+.banner .top img{
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 700px;
+}
 .banner .topplayer {
     position: absolute;
     top: 100px;
@@ -149,26 +156,29 @@ a:hover {
     text-align: center;
     z-index: 1;
 }
-/*.about .middle{*/
-    /*height: 380px;*/
-    /*margin: 0px auto 30px auto;*/
-    /*position: absolute;*/
-    /*text-align: center;*/
-/*}*/
-
-.about .middle img{
-    clear: both;
-    display: block;
-    margin: 0px auto;
-    clear: both;
-    width: 570px;
-    height: 380px;
+.about .middle .pic img {
+    /*clear: both;*/
+    position: relative;
+    float: left;
+    width: 410px;
+    height: auto;
+    margin-top: 0px;
+    margin-left: 500px;
+    z-index: 0;
 }
+
+/*.about .middle img{*/
+    /*clear: both;*/
+    /*display: block;*/
+    /*margin: 0px auto;*/
+    /*clear: both;*/
+    /*width: 570px;*/
+    /*height: 380px;*/
+/*}*/
 .about .middle .tit{
-    font-size: 35px;
-    font-weight: bold;
+    font-size: 25px;
     width: 200px;
-    text-align: center;
+    margin-left:800px;
 }
 .about .middle .backgronud{
     position: absolute;
@@ -178,12 +188,14 @@ a:hover {
     width: 370px;
     height: 250px;
     border: 1px solid gray;
+    margin-left: 750px;
 }
 .about .middle .text{
     position: relative;
     z-index: 4;
-    margin: 20px;
+    margin-left: 750px;
     line-height: 30px;
+    font-size: 13px;
 }
 .about .middle .text button{
     width: 100px;
@@ -200,17 +212,17 @@ a:hover {
     border: 2px solid #000000;
 }
 .about .middle .students{
-    width: 200px;
-    height: 145px;
+    width: 165px;
+    height: 100px;
     border: 1px solid #07CBC9;
     float: right;
     position: relative;
     z-index: 5;
     text-align: center;
-    font-size: 35px;
+    font-size: 25px;
     font-weight: bold;
-    bottom: 350px;
-    padding-top: 10px;
+    margin-right: 820px;
+    margin-top:75px;
 }
 .about .middle span{
     font-size: 20px;
@@ -241,6 +253,10 @@ a:hover {
     float: left;
     position: static;
     overflow: hidden;
+}
+.about .m-bottom .img img{
+    width: 100%;
+    height: 100%;
 }
 .about .m-bottom  .list {
     width: 25%;
@@ -279,8 +295,10 @@ a:hover {
 }
 
 .gallery .bot-gallery{
-    width: 100%;
-    margin: 0 100px;
+    width: 1152px;
+    /*margin: 0 100px;*/
+    /*盒子整体水平居中*/
+    margin: 0 auto;
 }
 .gallery .bot-gallery  dl{
     float: left;
